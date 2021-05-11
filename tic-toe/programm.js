@@ -217,7 +217,6 @@ function bot() {
 	}
 	if (fi == 1) randP("O");
 	else randP("X");
-	$("#turn").text("Now, it is bot's turn!");
 }
 
 function makeT() {
