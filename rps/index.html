@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./code.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Rock Paper Scissors</h1>
+	</header>
+
+	<div class="def">
+		Play with computer and relax!
+	</div>
+
+	<div class="score-board">
+		<div class="user" id="user">
+			user
+			<script>
+				var name = prompt("Enter your name, please no longer than 15 letters", "<name goes here>");
+				if (name == "<name goes here>") {
+					name = "no name";
+				}
+				if (name != null) {
+					$(".user").text(name);
+					if (name.length <= 7) {
+						$(".user").css("left", "-15%");
+					} else if (name.length <= 11) {
+						$(".user").css("left", "-35%");
+					} else {
+						$(".user").css("left", "-50%");
+					}
+				}
+			</script>
+		</div>
+		<div class="comp">Bot</div>
+		<span id="user_score">0</span>:<span id="comp_score">0</span>
+	</div>
+
+	<div class="result">Play!</div>
+	<div class="rps" align="center">
+		<div class="choice" id="r" onclick="rock()">
+			<img src="./imgs/rock.png" alt="">
+		</div>
+		<div class="choice" id="p" onclick="paper()">
+			<img src="./imgs/paper.png" alt="">
+		</div>
+		<div class="choice" id="s" onclick="scis()">
+			<img src="./imgs/scissors.png" alt="">
+		</div>
+	</div>
+	<div class="moti">
+		Make your choice!
+	</div>
+	<div class="info">
+		*Please, click slowly for best experience; <br>
+		*If you want to reset score, just reload the page; <br>
+		*If you want to pay me, call me to this phone number <i>+7(706)409-06-05</i>; <br>
+		*I wish you good game!
+	</div>
+	<div class="info_page">
+		<img src="./imgs/info.png" alt="" id="inf" onclick="show()">
+	</div>
+</body>
+</html>

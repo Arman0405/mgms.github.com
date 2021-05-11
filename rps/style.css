@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: black;
+	color: white;
+}
+
+header {
+	background: white;
+	padding: 20px 0;
+}
+
+header h1 {
+	color: black;
+	text-align: center;
+	font-family: Asap, sans-serif;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+.def {
+	margin: 20px;
+	font-size: 35px;
+	text-align: center;
+	font-family: Asap;
+}
+
+.score-board {
+	border: 2px solid white;
+	border-radius: 5px;
+	width: 200px;
+	padding: 10px;
+	margin: 10px auto;
+	font-size: 35px;
+	text-align: center;
+	position: relative;
+	font-family: Asap;
+}
+
+.user {
+	position: absolute;
+	background: red;
+	top: 15px;
+	left: -15%;
+	font-size: 20px;
+	padding: 2px 5px;
+}
+.comp {
+	position: absolute;
+	background: red;
+	top: 15px;
+	right: -20px;
+	font-size: 20px;
+	padding: 2px 5px;
+}
+.result {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 40px;
+	font-family: Asap;
+	font-weight: 500;
+}
+
+.rps {
+	margin-top: 20px;
+}
+
+.choice {
+	margin: 20px auto;
+	display: inline-block;
+}
+
+.choice img {
+	width: 130px;
+	margin: 0 30px;
+	padding : 10px;
+	border : 2px solid white;
+	border-radius: 50%;
+}
+
+.choice img:hover {
+	cursor: pointer;
+	background: #6F6F6F;
+}
+.moti {
+	font-size: 30px;
+	font-family: Asap;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#inf {
+	width: 30px;
+	bottom: 10px;
+	right: 10px;
+	position: fixed;
+}
+
+.info {
+	font-size: 20px;
+	font-family: Asap;
+	border-radius: 10px;
+	background-color: rgba(54, 54, 54, 0.5);
+	width: 300px;
+	right: 20px;
+	bottom: 60px;
+	position: absolute;
+	text-align: left;
+	padding: 10px;
+	display: none;
+}
+.info i {
+	text-decoration: underline;
+}
+#inf {
+	cursor: pointer;
+}
