@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	transition: all 0.5s ease;
+}
+
+header {
+	margin: 0 auto;
+	background: black;
+}
+header p {
+	cursor: pointer;
+	margin: 0 auto;
+	padding: 10px;
+	font-size: 30px;
+	width: 75%;
+	font-family: sans-serif;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+}
+
+#add {
+	cursor: pointer;
+	position: fixed;
+	background: #00FFFF;
+	border:none;
+	border-radius: 50%;
+	font-size: 40px;
+	height: 60px;
+	width: 60px;
+	right: 10px;
+	bottom: 10px;
+}
+
+div.inp {
+	margin: 10px auto;
+	width: 30%;
+	font-size: 25px;
+	font-family: sans-serif;
+}
+.txt {
+	margin-top: 15px;
+}
+#hed {
+	font-size:30px;
+}
+#tx {
+	font-size: 20px;
+}
+#comit {
+	margin-top: 10px;
+	font-size:15px;
+}
+.notenum {
+	margin: 20px 0 20px 100px;
+	padding: 20px 30px;
+	background: lightgrey;
+	border-left: 7px solid grey;
+}
+.hedr {
+	font-size: 35px;
+	font-family: sans-serif;
+}
+.taxt {
+	margin: 15px 20px;
+	font-size: 23px;
+	font-family: sans-serif;
+}

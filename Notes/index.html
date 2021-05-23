@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notes</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./code.js"></script>
+</head>
+<body>
+	<header title="Click for remove it!" onclick="eras()" class="animate__animated animate__fadeInDown header">
+		<p>Hello to my new project! It is notebook, where you can add and remove your notes! Enjoy it!</p>
+	</header>
+	<div class="inp" style="display: none;">
+		<p class="heading">
+			Heading: <br>
+			<textarea name="" id="hed" cols="25" rows="3"></textarea>
+		</p>
+		<p class="txt">
+			Text: <br>
+			<textarea name="" id="tx" cols="50" rows="10"></textarea>
+		</p>
+		<button onclick="comit()" id="comit">Commit changes</button>
+	</div>
+	<div id="notes">
+		<div class="notenum" id = "num1">
+			<p class="hedr">It's your first note!</p>
+			<p class="taxt">Hello world! It's your first note! To create more and more notes, click '+' at the right-down side.</p>
+		</div>
+	</div>
+	<button id="add" onclick="ad()">+</button>
+</body>
+</html>
